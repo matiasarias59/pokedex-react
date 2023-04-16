@@ -16,7 +16,7 @@ export default function PokemonDetailContainer() {
       if (res.ok) {
         const data = await res.json();
         setPokemon(data);
-        console.log(data)
+        //console.log(data)
       } else {
         setNotFound(true);
       }
@@ -27,7 +27,7 @@ export default function PokemonDetailContainer() {
 
   useEffect(()=>{
     //setNotFound(false)
-    console.log(pokeId)
+    //console.log(pokeId)
     selectedPoke?.id? setPokemon(selectedPoke) : GetPokemonById(pokeId);
 
   },[pokeId])

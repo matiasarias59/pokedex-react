@@ -1,4 +1,5 @@
 import React from "react";
+import EvoChainContainer from "./EvoChainContainer";
 
 export default function PokemonDetail({ props }) {
   const { pokemon } = props;
@@ -19,6 +20,7 @@ export default function PokemonDetail({ props }) {
         </div>
         <p>Peso {pokemon.weight}</p>
         <p>Altura {pokemon.height}</p>
+        <EvoChainContainer pokeId={pokemon.id}/>
       </div>
     </>
   );
