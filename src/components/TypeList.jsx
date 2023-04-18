@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TypeIcon from "./TypeIcon";
 
 export default function TypeList({ props }) {
   const { typeList } = props;
@@ -9,7 +10,10 @@ export default function TypeList({ props }) {
       {typeList.map((el) => {
         return (<li key={el.id}>
           <Link to={`/type/${el.id}`}>
-          {el.name}
+            <h3>
+              {el.name}
+            </h3>
+            <TypeIcon type={el.name}/>
           </Link>
         </li>)
       })}

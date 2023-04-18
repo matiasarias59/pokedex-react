@@ -1,5 +1,5 @@
 import "./styles/scss/main.scss";
-import HomeScreen from "./components/HomeScreen.jsx";
+//import HomeScreen from "./components/HomeScreen.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PokeListContainer from "./components/PokeListContainer";
 import Menu from "./components/Menu";
@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
 import PokemonDetailContainer from "./components/PokemonDetailContainer";
 import { AppProvider } from "./context/AppContext";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <SearchBar />
         <Routes>
           {/* <Route path='/' element={<HomeScreen/>} /> */}
+          <Route path='/' element={<HomePage />} />
           <Route path='/menu' element={<Menu />} />
           <Route path='/type/:typeId' element={<PokeListContainer />} />
           <Route path='/search' element={<PokeListContainer />} />

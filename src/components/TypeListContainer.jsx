@@ -39,7 +39,7 @@ export default function TypeListContainer() {
 
   return (
     <>
-      <h1>Lista de Tipos</h1>
+      <h2>Tipos</h2>
       <TypeList props={{ typeList }} />
     </>
   );

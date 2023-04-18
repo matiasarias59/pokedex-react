@@ -12,9 +12,7 @@ export default function EvoChainContainer(props) {
       );
       if (res.ok) {
         const data = await res.json();
-        //setChain(data);
         const chainUrl = data.evolution_chain.url;
-        //console.log(chainUrl);
         return chainUrl;
       }
     } catch (error) {
@@ -29,7 +27,6 @@ export default function EvoChainContainer(props) {
       const res = await fetch(url);
       const data = await res.json();
       const chain = data.chain;
-      // console.log(chain);
       getNextEvolution(arrChain, chain);
 
       return arrChain;
@@ -49,30 +46,30 @@ export default function EvoChainContainer(props) {
 
   const getPokemonsChainIds = async (arr) => {
     const arrIds = await Promise.all(
-        arr.map(async (el) => {
-          const res = await fetch(el.url);
-          const data = await res.json();
-          return data.id;
-        })
-      );
-      return arrIds;
-
+      arr.map(async (el) => {
+        const res = await fetch(el.url);
+        const data = await res.json();
+        return data.id;
+      })
+    );
+    return arrIds;
   };
 
   const getPokemonsById = async (idsArr) => {
-    const pokemons = await Promise.all(idsArr.map(async (el)=> {
-        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${el}`)
+    const pokemons = await Promise.all(
+      idsArr.map(async (el) => {
+        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${el}`);
         const data = await res.json();
         const pokemon = {
-            id:data.id,
-            name:data.name,
-            sprites:data.sprites,
+          id: data.id,
+          name: data.name,
+          sprites: data.sprites,
         };
         return pokemon;
-        console.log(data)
-    }));
+      })
+    );
     return pokemons;
-  }
+  };
 
   const setEvolutionChain = async (id) => {
     const url = await getEvolutionChainUrl(id);
@@ -81,7 +78,6 @@ export default function EvoChainContainer(props) {
     setChain(await getPokemonsById(ids));
   };
 
-
   useEffect(() => {
     pokeId && setEvolutionChain(pokeId);
   }, [pokeId]);
@@ -89,9 +85,7 @@ export default function EvoChainContainer(props) {
   return (
     <div>
       EvoChainContainer
-      {chain?.length&&
-      <EvoChain pokemons={chain}/>
-      }
+      {chain?.length && <EvoChain pokemons={chain} />}
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.svg{
+
+    &__container{
+        border-radius: 50%;
+        width: fit-content;
+        padding: 1.5rem;
+
+    }
+
+    &__icon{
+        width: 4rem;
+        height: 4rem;
+        margin: auto;
+    }
+}
