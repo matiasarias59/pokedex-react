@@ -7,10 +7,13 @@ export default function PokeList({props}) {
 
   return (
     <>
+    <ul className="pokeList">
+
       {pokeList.map((el) => {
-      return (
-        <Pokemon key={el.id} pokemon={el} />
-        )})}
+        return (
+          <Pokemon key={el.id} pokemon={el} />
+          )})}
+          </ul>
     </>
   );
 }

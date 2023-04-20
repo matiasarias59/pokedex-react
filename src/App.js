@@ -3,17 +3,17 @@ import "./styles/scss/main.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PokeListContainer from "./components/PokeListContainer";
 import Menu from "./components/Menu";
-import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
 import PokemonDetailContainer from "./components/PokemonDetailContainer";
 import { AppProvider } from "./context/AppContext";
 import HomePage from "./components/HomePage";
+import Header from "./components/Header";
 
 function App() {
   return (
     <AppProvider>
       <BrowserRouter>
-        <Navbar />
+        <Header/>
         <SearchBar />
         <Routes>
           {/* <Route path='/' element={<HomeScreen/>} /> */}

@@ -17,12 +17,14 @@ export default function Pokemon(props) {
 
 
   return (
-    <div key={pokemon.id} onClick={()=>handleClick(pokemon.id)}>
-      <h2>{pokemon.name}</h2>
-      <img
+    <li className="pokeList__element" key={pokemon.id} onClick={()=>handleClick(pokemon.id)}>
+      <div className="pokeList__element__card">
+      <h2 className="pokeList__element__card__name">{pokemon.name}</h2>
+      <img className="pokeList__element__card__img"
         src={`${pokemon.sprites.other["official-artwork"].front_default}`}
         alt=''
-      />
-    </div>
+        />
+        </div>
+    </li>
   );
 }

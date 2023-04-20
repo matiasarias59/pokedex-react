@@ -63,8 +63,7 @@ export default function PokeListContainer() {
   }, [location]);
 
   return (
-    <>
-      <h1>Pokemon</h1>
+    <div className="pokeList__container">
       {notFound ? (
         <h2>No hay nada por aqui</h2>
       ) : pokeList.length ? (
@@ -72,6 +71,6 @@ export default function PokeListContainer() {
       ) : (
         <h2>Cargando...</h2>
       )}
-    </>
+    </div>
   );
 }

@@ -1,0 +1,17 @@
+.typeList{
+    &__container{
+
+    }
+    &__title{
+
+    }
+    &__list{
+        display: none;
+        &--active{
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+
+    }
+}

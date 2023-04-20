@@ -26,7 +26,6 @@ export default function TypeListContainer() {
     try {
       const res = await fetch(url);
       const data = await res.json();
-     // console.log(data);
       return data;
     } catch (error) {
       console.log(error);
@@ -39,7 +38,6 @@ export default function TypeListContainer() {
 
   return (
     <>
-      <h2>Tipos</h2>
       <TypeList props={{ typeList }} />
     </>
   );
