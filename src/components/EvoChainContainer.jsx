@@ -83,8 +83,7 @@ export default function EvoChainContainer(props) {
   }, [pokeId]);
 
   return (
-    <div>
-      EvoChainContainer
+    <div className="EvoChain__container">
       {chain?.length && <EvoChain pokemons={chain} />}
     </div>
   );

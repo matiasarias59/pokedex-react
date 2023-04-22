@@ -1,8 +1,25 @@
 import React from "react";
 import EvoChainContainer from "./EvoChainContainer";
+import TabsPokeDetail from "./TabsPokeDetail";
+import PokeStats from "./PokeStats";
+import PokeAbilities from "./PokeAbilities";
 
 export default function PokemonDetail({ props }) {
   const { pokemon } = props;
+  const tabs = [
+    {
+      title: "Stats",
+      element: <PokeStats />,
+    },
+    {
+      title: "Habilidades",
+      element: <PokeAbilities />,
+    },
+    {
+      title: "Evoluciones",
+      element: <EvoChainContainer pokeId={pokemon.id} />,
+    },
+  ];
 
   return (
     <>
@@ -20,7 +37,8 @@ export default function PokemonDetail({ props }) {
         </div>
         <p>Peso {pokemon.weight}</p>
         <p>Altura {pokemon.height}</p>
-        <EvoChainContainer pokeId={pokemon.id}/>
+        <TabsPokeDetail props={{tabs}} />
+        {/*  <EvoChainContainer pokeId={pokemon.id} /> */}
       </div>
     </>
   );

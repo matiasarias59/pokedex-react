@@ -1,0 +1,15 @@
+.tabs__container{
+    display: flex;
+    flex-direction: row;
+
+    .tab{
+        &__content{
+            display: none;
+
+            &--active{
+                display: block;
+            }
+        }
+    }
+}
+

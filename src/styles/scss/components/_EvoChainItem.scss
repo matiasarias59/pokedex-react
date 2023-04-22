@@ -1,0 +1,20 @@
+.EvoChain{
+    &__item{
+        &__name{
+            text-align: center;
+        }
+        &__img{
+            &__container{
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 50%;
+                border: 0.3rem solid purple;
+                margin: 1rem 2rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+}

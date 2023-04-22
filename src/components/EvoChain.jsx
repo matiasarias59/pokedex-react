@@ -6,12 +6,12 @@ export default function EvoChain(props) {
 
   return (
     <>
-      <div>evo chain</div>
-      <div>
+      {/* <div>evo chain</div>
+      <div> */}
         {pokemons.map((el) => {
           return <EvoChainItem key={el.id} pokemon={el} />;
         })}
-      </div>
+      {/* </div> */}
     </>
   );
 }
