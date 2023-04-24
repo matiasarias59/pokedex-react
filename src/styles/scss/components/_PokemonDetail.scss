@@ -1,0 +1,89 @@
+.poke__detail {
+  &__container {
+    background-color: $bg-light;
+    border: 0.2rem solid $primary-color;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 1rem $shadow-light;
+    max-width: 90vw;
+    margin: 2rem auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    // padding: 2rem 1rem;
+  }
+
+  &__id {
+    background-color: $primary-color;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0rem 0.1rem 0.5rem $shadow-light;
+    span {
+      color: white;
+      margin: 0.3rem 2rem;
+      font-size: 3rem;
+    }
+  }
+
+  &__name {
+    color: $primary-color;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__types {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: $bg-light;
+    border: 0.2rem solid $shadow-light;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 1rem $shadow-light;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem;
+    }
+
+    &__name {
+      color: $bg-dark;
+      text-align: center;
+      margin: 0 auto 0.5rem auto;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__specs{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+      color: $bg-dark;
+      font-size: 1rem;
+        }
+
+        span{
+            color: $secondary-color;
+            font-size: 3rem;
+        }
+
+        &:last-child{
+            margin-left: 2rem;
+            padding-left: 2rem;
+            border-left: 0.1rem solid $shadow-light;
+        }
+    }
+  }
+}

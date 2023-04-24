@@ -1,5 +1,7 @@
 @import 'base/normalize';
 
+@import 'abstracts/variables';
+
 @import 'abstracts/animations';
 
 @import 'components/App';
@@ -17,6 +19,8 @@
 @import 'components/PokeList';
 
 @import 'components/Pokemon';
+
+@import 'components/PokemonDetail';
 
 @import 'components/TabsPokeDetail';
 

@@ -8,8 +8,20 @@
     }
 
     &__icon{
-        width: 4rem;
-        height: 4rem;
-        margin: auto;
+        &--s{
+            width: 2rem;
+            height: 2rem;
+            margin: auto;
+        }
+        &--m{
+            width: 3rem;
+            height: 3rem;
+            margin: auto;
+        }
+        &--l{
+            width: 4rem;
+            height: 4rem;
+            margin: auto;
+        }
     }
 }

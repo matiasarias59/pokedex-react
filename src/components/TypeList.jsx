@@ -20,7 +20,7 @@ export default function TypeList({ props }) {
               <li className="typeList__list__element" key={el.id} onClick={((e)=>handleClick(e))}>
                 <Link to={`/type/${el.id}`}>
                   <h3 className="typeList__list__element__name">{el.name}</h3>
-                  <TypeIcon type={el.name} />
+                  <TypeIcon type={el.name} size={"l"}/>
                 </Link>
               </li>
             );

@@ -31,7 +31,6 @@ export default function PokemonDetailContainer() {
 
   return (
     <>
-    <div>PokemonDetailContainer</div>
     {!notFound?
     <PokemonDetail props={{pokemon}}/>:<h2>no disponible</h2>
   }
