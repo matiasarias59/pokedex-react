@@ -10,7 +10,7 @@ export default function PokemonDetail({ props }) {
   const tabs = [
     {
       title: "Stats",
-      element: <PokeStats />,
+      element: <PokeStats stats={pokemon.stats} />,
     },
     {
       title: "Habilidades",

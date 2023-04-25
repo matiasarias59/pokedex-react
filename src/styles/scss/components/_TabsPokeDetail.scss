@@ -1,10 +1,10 @@
 .tabs__container{
     display: flex;
     flex-direction: column;
-    background-color:rgb(221, 221, 221);
+    background-color:$bg-light;
     margin: 1rem auto 3rem auto;
     width: 80vw;
-    box-shadow: 0rem 0rem 1rem rgb(98, 98, 98);
+    box-shadow: 0rem 0rem 1rem $shadow-light;
     padding: 1rem;
     border-radius: 1rem;
 
@@ -20,16 +20,16 @@
 
                 font-weight: 400;
                 font-size: 1.5rem;
-                color: rgb(37, 37, 37);
+                color:$bg-dark;
             }
             &--active{
                 h3{
 
                     font-weight: 400;
                     font-size: 1.5rem;
-                    color: rgb(37, 37, 37);
+                    color:$bg-dark;
                 }
-                border-bottom: 0.2rem solid purple;
+                border-bottom: 0.2rem solid $secondary-color;
                 margin-bottom: 1rem;
             }
         }
