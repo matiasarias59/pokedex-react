@@ -60,12 +60,7 @@ export default function EvoChainContainer(props) {
       idsArr.map(async (el) => {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${el}`);
         const data = await res.json();
-        const pokemon = {
-          id: data.id,
-          name: data.name,
-          sprites: data.sprites,
-        };
-        return pokemon;
+        return data;
       })
     );
     return pokemons;
@@ -83,7 +78,7 @@ export default function EvoChainContainer(props) {
   }, [pokeId]);
 
   return (
-    <div className="EvoChain__container">
+    <div className='EvoChain__container'>
       {chain?.length && <EvoChain pokemons={chain} />}
     </div>
   );

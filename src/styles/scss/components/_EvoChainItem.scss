@@ -1,20 +1,29 @@
-.EvoChain{
-    &__item{
-        &__name{
-            text-align: center;
-        }
-        &__img{
-            &__container{
-                
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: white;
-                border-radius: 50%;
-                border: 0.3rem solid purple;
-                margin: 1rem 2rem;
-                padding: 0.5rem;
-            }
-        }
+.EvoChain {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__name {
+      background-color: $primary-color;
+      text-transform: uppercase;
+      color: $bg-light;
+      font-size: 1.5rem;
+      width: fit-content;
+      padding: 0.3rem 0.8rem;
+      border-radius: 1rem;
     }
+    &__img {
+      &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50%;
+        border: 0.5rem solid $primary-color;
+        margin: 2rem ;
+        padding: 2rem;
+        overflow: hidden;
+      }
+    }
+  }
 }

@@ -14,7 +14,7 @@ export default function PokemonDetail({ props }) {
     },
     {
       title: "Habilidades",
-      element: <PokeAbilities />,
+      element: <PokeAbilities abilities={pokemon.abilities} />,
     },
     {
       title: "Evoluciones",
