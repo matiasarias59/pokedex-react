@@ -2,6 +2,9 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import TypeIcon from "./TypeIcon";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretRight, faXmark } from "@fortawesome/free-solid-svg-icons";
+
 export default function TypeList({ props }) {
   const { typeList } = props;
   const [menuIsActive, setMenuIsActive] = useState(false);
@@ -12,7 +15,10 @@ export default function TypeList({ props }) {
 
   return (
     <div className="typeList__container">
-      <h2 className="typeList__title" onClick={(()=>handleClick())}>Tipos</h2>
+      <div className="typeList__title"  onClick={(()=>handleClick())}>
+      <span>Tipos</span>
+      <FontAwesomeIcon className={`typeList__title__icon${menuIsActive?"--active":""}`} icon={faCaretRight}  />
+      </div>
       <ul className={`typeList__list${menuIsActive?"--active":""}`}>
         {typeList.map((el) => {
           if (el.pokemon.length) {
