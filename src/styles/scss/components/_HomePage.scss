@@ -1,3 +1,37 @@
-.homePage__container{
-    background-color: red;
+.homePage {
+  &__container {
+    margin-top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+
+    section {
+      width: 80vw;
+      background-color: $bg-light;
+      border-radius: 0 2rem 2rem 0;
+      overflow: hidden;
+      h2 {
+        color: white;
+        font-size: 3rem;
+        font-weight: 800;
+        padding: 0.5rem;
+        padding-left: 2rem;
+        background-color: $secondary-color;
+        width: 100%;
+      }
+      p {
+        font-size: 2rem;
+        color: $secondary-color;
+        margin: 2rem;
+        hyphens: none;
+      }
+    }
+
+  }
+  &__img__container {
+    
+    position: fixed;
+    bottom:0;
+    z-index: -1;
+  }
 }

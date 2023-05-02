@@ -11,14 +11,13 @@ export default function () {
     e.target.reset();
   };
   return (
-    <div>
-      <form onSubmit={(e) => handleSearch(e)} action=''>
+    <div className="searchBar__container">
+      <form className="searchBar__form" onSubmit={(e) => handleSearch(e)} action=''>
         <input
-          style={{ border: "1px solid black" }}
           type='text'
           name='q'
           id=''
-          placeholder='nombre o n° de pokemon'
+          placeholder='Nombre o n° de Pokemon'
         />
         <button type='submit'>Go</button>
       </form>

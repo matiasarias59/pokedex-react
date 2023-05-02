@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import PokeList from "./PokeList";
+import Loading from "./Loading";
 import { useLocation, useParams, useSearchParams } from "react-router-dom";
+import PokeNotFound from "./PokeNotFound";
 
 export default function PokeListContainer() {
   const { typeId } = useParams();
@@ -65,11 +67,11 @@ export default function PokeListContainer() {
   return (
     <div className="pokeList__container">
       {notFound ? (
-        <h2>No hay nada por aqui</h2>
+        <PokeNotFound/>
       ) : pokeList.length ? (
         <PokeList props={{ pokeList }} />
       ) : (
-        <h2>Cargando...</h2>
+        <Loading/>
       )}
     </div>
   );

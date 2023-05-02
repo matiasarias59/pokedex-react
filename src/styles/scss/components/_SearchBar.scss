@@ -1,0 +1,38 @@
+.searchBar{
+    &__container{
+        //background-color: aqua;
+        margin: auto;
+        width: fit-content;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        margin: auto;
+        //overflow: hidden;
+        
+        input{
+
+            width: 75vw;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            border: 0.3rem solid $primary-color;
+            border-radius: 1rem 0 0 1rem;
+            background-color: white;
+
+            &::placeholder{
+                color: $primary-color;
+            }
+
+        }
+        button{
+            font-size: 2rem;
+            color: white;
+            background-color: $primary-color;
+            padding: 0.5rem;
+            border-radius: 0 1rem 1rem 0;
+
+        }
+    }
+}

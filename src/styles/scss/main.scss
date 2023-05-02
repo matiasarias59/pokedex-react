@@ -6,6 +6,8 @@
 
 @import 'components/App';
 
+@import 'components/Header';
+
 @import 'components/HomeScreen';
 
 @import 'components/HomePage';
@@ -31,3 +33,9 @@
 @import 'components/PokeStats';
 
 @import 'components/PokeAbilities';
+
+@import 'components/SearchBar';
+
+@import 'components/Loading';
+
+@import 'components/PokeNotFound';

@@ -12,14 +12,19 @@ export default function TypeList({ props }) {
   const handleClick = () => {
     setMenuIsActive(!menuIsActive)
   }
+  const handleMouseLeave = (e) => {
+    e.stopPropagation();
+    console.log(e)
+    setMenuIsActive(false)
+  }
 
   return (
     <div className="typeList__container">
-      <div className="typeList__title"  onClick={(()=>handleClick())}>
+      <div className="typeList__title"  onClick={(()=>handleClick())} >
       <span>Tipos</span>
       <FontAwesomeIcon className={`typeList__title__icon${menuIsActive?"--active":""}`} icon={faCaretRight}  />
       </div>
-      <ul className={`typeList__list${menuIsActive?"--active":""}`}>
+      <ul className={`typeList__list${menuIsActive?"--active":""}`} onMouseLeave={((e)=>handleMouseLeave(e))}>
         {typeList.map((el) => {
           if (el.pokemon.length) {
             return (
