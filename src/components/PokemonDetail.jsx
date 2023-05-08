@@ -23,7 +23,7 @@ export default function PokemonDetail({ props }) {
   ];
 
   return (
-    <div className='poke__detail__container'>
+    <div className={`poke__detail__container --${pokemon?.types? pokemon.types[0].type.name : ""}`}>
       <div className='poke__detail__id'>
         <span>#{pokemon.id}</span>
       </div>

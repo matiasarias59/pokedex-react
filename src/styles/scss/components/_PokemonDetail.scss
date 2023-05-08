@@ -58,31 +58,283 @@
     }
   }
 
-  &__specs{
+  &__specs {
     display: flex;
     flex-direction: row;
     margin: 2rem auto;
 
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-        p{
-      color: $bg-dark;
-      font-size: 1rem;
-        }
+      p {
+        color: $bg-dark;
+        font-size: 1rem;
+      }
 
-        span{
-            color: $secondary-color;
-            font-size: 3rem;
-        }
+      span {
+        color: $secondary-color;
+        font-size: 3rem;
+      }
 
-        &:last-child{
-            margin-left: 2rem;
-            padding-left: 2rem;
-            border-left: 0.1rem solid $shadow-light;
-        }
+      &:last-child {
+        margin-left: 2rem;
+        padding-left: 2rem;
+        border-left: 0.1rem solid $shadow-light;
+      }
     }
   }
+}
+
+.--bug {
+  background: #92bd2d;
+  background: -webkit-linear-gradient(
+    to top,
+    #c7eb71,
+    #92bd2d
+  );
+  background: linear-gradient(
+    to top,
+    #c7eb71,
+    #92bd2d
+  );
+}
+
+.--dark {
+  background: #595761;
+  background: -webkit-linear-gradient(
+    to top,
+    #818085,
+    #595761
+  );
+  background: linear-gradient(
+    to top,
+    #818085,
+    #595761
+  );
+}
+
+.--dragon {
+  background: #0c6ac8;
+  background: -webkit-linear-gradient(
+    to top,
+    #5fafff,
+    #0c6ac8
+  );
+  background: linear-gradient(
+    to top,
+    #5fafff,
+    #0c6ac8
+  );
+}
+
+.--electric {
+  background: #f2d94e;
+  background: -webkit-linear-gradient(
+    to top,
+    #ffef91,
+    #f2d94e
+  );
+  background: linear-gradient(
+    to top,
+    #ffef91,
+    #f2d94e
+  );
+}
+
+.--fairy {
+  background: #ef90e6;
+  background: -webkit-linear-gradient(
+    to top,
+    #ffd4fb,
+    #ef90e6
+  );
+  background: linear-gradient(
+    to top,
+    #ffd4fb,
+    #ef90e6
+  );
+}
+
+.--fighting {
+  background: #d3425f;
+  background: -webkit-linear-gradient(
+    to top,
+    #ff829b,
+    #d3425f
+  );
+  background: linear-gradient(
+    to top,
+    #ff829b,
+    #d3425f
+  );
+}
+
+.--fire {
+  background: #fba64c;
+  background: -webkit-linear-gradient(
+    to top,
+    #ffcd98,
+    #fba64c
+  );
+  background: linear-gradient(
+    to top,
+    #ffcd98,
+    #fba64c
+  );
+}
+
+.--flying {
+  background: #a1bbec;
+  background: -webkit-linear-gradient(
+    to top,
+    #d9e6ff,
+    #a1bbec
+  );
+  background: linear-gradient(
+    to top,
+    #d9e6ff,
+    #a1bbec
+  );
+}
+
+.--ghost {
+  background: #5f6dbc;
+  background: -webkit-linear-gradient(
+    to top,
+    #9faaeb,
+    #5f6dbc
+  );
+  background: linear-gradient(
+    to top,
+    #9faaeb,
+    #5f6dbc
+  );
+}
+
+.--grass {
+  background: #60bd58;
+  background: -webkit-linear-gradient(
+    to top,
+    #a9ffa1,
+    #60bd58
+  );
+  background: linear-gradient(
+    to top,
+    #a9ffa1,
+    #60bd58
+  );
+}
+
+.--ground {
+  background: #da7c4d;
+  background: -webkit-linear-gradient(
+    to top,
+    #ffb894,
+    #da7c4d
+  );
+  background: linear-gradient(
+    to top,
+    #ffb894,
+    #da7c4d
+  );
+}
+
+.--ice {
+  background: #76d1c1;
+  background: -webkit-linear-gradient(
+    to top,
+    #c7fff5,
+    #76d1c1
+  );
+  background: linear-gradient(
+    to top,
+    #c7fff5,
+    #76d1c1
+  );
+}
+
+.--normal {
+  background: #a0a29f;
+  background: -webkit-linear-gradient(
+    to top,
+    #f2fbed,
+    #a0a29f
+  );
+  background: linear-gradient(
+    to top,
+    #f2fbed,
+    #a0a29f
+  );
+}
+
+.--poison {
+  background: #b763cf;
+  background: -webkit-linear-gradient(
+    to top,
+    #f1beff,
+    #b763cf
+  );
+  background: linear-gradient(
+    to top,
+    #f1beff,
+    #b763cf
+  );
+}
+
+.--psychic {
+  background: #fa8582;
+  background: -webkit-linear-gradient(
+    to top,
+    #ffc0be,
+    #fa8582
+  );
+  background: linear-gradient(
+    to top,
+    #ffc0be,
+    #fa8582
+  );
+}
+
+.--rock {
+  background: #c9bc8a;
+  background: -webkit-linear-gradient(
+    to top,
+    #fff7d6,
+    #c9bc8a
+  );
+  background: linear-gradient(
+    to top,
+    #fff7d6,
+    #c9bc8a
+  );
+}
+
+.--steel {
+  background: #5795a3;
+  background: -webkit-linear-gradient(
+    to top,
+    #a8efff,
+    #5795a3
+  );
+  background: linear-gradient(
+    to top,
+    #a8efff,
+    #5795a3
+  );
+}
+
+.--water {
+  background: #539ddf;
+  background: -webkit-linear-gradient(
+    to top,
+    #9dd1ff,
+    #539ddf
+  );
+  background: linear-gradient(
+    to top,
+    #9dd1ff,
+    #539ddf
+  );
 }

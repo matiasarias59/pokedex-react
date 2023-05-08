@@ -1,6 +1,6 @@
 import "./styles/scss/main.scss";
 //import HomeScreen from "./components/HomeScreen.jsx";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import PokeListContainer from "./components/PokeListContainer";
 import Menu from "./components/Menu";
 import SearchBar from "./components/SearchBar";
@@ -12,7 +12,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Header/>
         <SearchBar />
         <Routes>
@@ -23,7 +23,7 @@ function App() {
           <Route path='/search' element={<PokeListContainer />} />
           <Route path='/pokemon/:pokeId' element={<PokemonDetailContainer />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }

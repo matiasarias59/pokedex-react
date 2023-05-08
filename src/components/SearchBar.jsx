@@ -6,8 +6,7 @@ export default function () {
   const handleSearch = (e) => {
     e.preventDefault();
     const query = e.target[0].value;
-
-    navigate(`/search/?q=${query}`);
+    query.length && navigate(`/search/?q=${query.toLowerCase()}`);
     e.target.reset();
   };
   return (
