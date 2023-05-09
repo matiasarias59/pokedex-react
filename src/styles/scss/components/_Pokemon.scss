@@ -1,25 +1,22 @@
-.pokeList{
-    &__element{
-        &__card{
-            background-color: $bg-light;
-            border: 0.1rem solid rgb(198, 198, 198);
-            border-radius: 1rem;
-            box-shadow: 0rem 0rem 2rem $shadow-light;
-            max-width: 15rem;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            
-            /* &:hover{
-                scale: 1.1;
-            } */
-            &__name{
-                font-size: 1.5rem;
-                font-weight: 800;
-                text-align: center;
-                text-transform: capitalize;
-                margin-bottom: 0.2rem;
-                color: rgb(199, 18, 18);
-            }
-        }
+.pokeList {
+  &__element {
+    &__card {
+      background-color: $bg-light;
+      border: 0.1rem solid rgb(198, 198, 198);
+      border-radius: 1rem;
+      box-shadow: 0rem 0rem 2rem $shadow-light;
+      max-width: 15rem;
+      margin: 0.5rem;
+      padding: 0.5rem;
+
+      &__name {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 0.2rem;
+        color: rgb(199, 18, 18);
+      }
     }
+  }
 }

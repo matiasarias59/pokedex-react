@@ -1,15 +1,13 @@
-body{
-    background-image: url("../../../../public/src/img/backgroundApp.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
-   
+body {
+  background-image: url("../../../../public/src/img/backgroundApp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-#root{
-  @include media-up(lg){
+#root {
+  @include media-up(md) {
     height: 100vh;
   }
-} 
+}

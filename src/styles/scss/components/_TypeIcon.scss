@@ -1,27 +1,25 @@
-.svg{
+.svg {
+  &__container {
+    border-radius: 50%;
+    width: fit-content;
+    padding: 1.5rem;
+  }
 
-    &__container{
-        border-radius: 50%;
-        width: fit-content;
-        padding: 1.5rem;
-
+  &__icon {
+    &--s {
+      width: 2rem;
+      height: 2rem;
+      margin: auto;
     }
-
-    &__icon{
-        &--s{
-            width: 2rem;
-            height: 2rem;
-            margin: auto;
-        }
-        &--m{
-            width: 3rem;
-            height: 3rem;
-            margin: auto;
-        }
-        &--l{
-            width: 4rem;
-            height: 4rem;
-            margin: auto;
-        }
+    &--m {
+      width: 3rem;
+      height: 3rem;
+      margin: auto;
     }
+    &--l {
+      width: 4rem;
+      height: 4rem;
+      margin: auto;
+    }
+  }
 }

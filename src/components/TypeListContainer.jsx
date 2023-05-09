@@ -16,11 +16,10 @@ export default function TypeListContainer() {
         })
       );
       setTypeList(types);
-     // console.log(types);
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   const getTypeData = async (url) => {
     try {
@@ -30,7 +29,7 @@ export default function TypeListContainer() {
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   useEffect(() => {
     getTypeList(urlTypes);

@@ -240,7 +240,7 @@ export default function TypeIcon({ type, size }) {
       style={{ backgroundColor: `#${icons[type]?.color}` }}
     >
       <svg
-        className={`svg__icon${size?`--${size}`:"--m"}`}
+        className={`svg__icon${size ? `--${size}` : "--m"}`}
         fill='none'
         viewBox='0 0 512 512'
         xmlns='http://www.w3.org/2000/svg'

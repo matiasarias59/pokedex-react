@@ -1,12 +1,10 @@
-import React, { useState, useContext, useEffect } from 'react'
-
-import { useParams } from 'react-router-dom';
-import PokemonDetail from './PokemonDetail.jsx';
-import {AppContext} from '../context/AppContext.js';
-import PokeNotFound from './PokeNotFound.jsx';
+import React, { useState, useContext, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import PokemonDetail from "./PokemonDetail.jsx";
+import { AppContext } from "../context/AppContext.js";
+import PokeNotFound from "./PokeNotFound.jsx";
 export default function PokemonDetailContainer() {
-
-  const {selectedPoke} = useContext(AppContext);
+  const { selectedPoke } = useContext(AppContext);
   const { pokeId } = useParams();
   const [notFound, setNotFound] = useState(false);
   const [pokemon, setPokemon] = useState({});
@@ -25,17 +23,11 @@ export default function PokemonDetailContainer() {
     }
   };
 
-  useEffect(()=>{
-    selectedPoke?.id? setPokemon(selectedPoke) : GetPokemonById(pokeId);
-
-  },[pokeId])
+  useEffect(() => {
+    selectedPoke?.id ? setPokemon(selectedPoke) : GetPokemonById(pokeId);
+  }, [pokeId]);
 
   return (
-    <>
-    {!notFound?
-    <PokemonDetail props={{pokemon}}/>:<PokeNotFound/>
-  }
-    
-    </>
-  )
+    <>{!notFound ? <PokemonDetail props={{ pokemon }} /> : <PokeNotFound />}</>
+  );
 }

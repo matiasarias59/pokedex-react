@@ -11,14 +11,11 @@
       border-radius: 0 2rem 2rem 0;
       overflow: hidden;
 
-      @include media-up(lg){
+      @include media-up(md) {
         width: 30vw;
         border-radius: 2rem;
         margin: auto;
-
-
-    }
-
+      }
 
       h2 {
         color: white;
@@ -36,18 +33,15 @@
         hyphens: none;
       }
     }
-
   }
   &__img__container {
-    
     position: fixed;
-    bottom:0;
+    bottom: 0;
     z-index: -1;
 
-    @include media-up(lg){
-      //position: initial;
+    @include media-up(md) {
       width: 45rem;
-      left: calc(50vw - 45rem/2);
+      left: calc(50vw - 45rem / 2);
       margin: 4rem auto 0 auto;
     }
   }

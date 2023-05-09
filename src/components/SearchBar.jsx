@@ -10,8 +10,12 @@ export default function () {
     e.target.reset();
   };
   return (
-    <div className="searchBar__container">
-      <form className="searchBar__form" onSubmit={(e) => handleSearch(e)} action=''>
+    <div className='searchBar__container'>
+      <form
+        className='searchBar__form'
+        onSubmit={(e) => handleSearch(e)}
+        action=''
+      >
         <input
           type='text'
           name='q'

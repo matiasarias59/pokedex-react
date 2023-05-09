@@ -4,9 +4,9 @@
     flex-direction: column;
     align-content: center;
 
-    @include media-up(lg){
-     margin: 2rem auto; 
-     width: 60vw;   
+    @include media-up(md) {
+      margin: 2rem auto;
+      width: 60vw;
     }
   }
   &__title {
@@ -49,7 +49,6 @@
       background-color: $bg-light;
       box-shadow: 0rem 0rem 1rem $shadow-light;
       padding: 1rem;
-        
     }
 
     &__element {

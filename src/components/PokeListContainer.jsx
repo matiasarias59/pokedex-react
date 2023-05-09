@@ -65,13 +65,13 @@ export default function PokeListContainer() {
   }, [location]);
 
   return (
-    <div className="pokeList__container">
+    <div className='pokeList__container'>
       {notFound ? (
-        <PokeNotFound/>
+        <PokeNotFound />
       ) : pokeList.length ? (
         <PokeList props={{ pokeList }} />
       ) : (
-        <Loading/>
+        <Loading />
       )}
     </div>
   );

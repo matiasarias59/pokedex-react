@@ -13,23 +13,21 @@
       margin: auto;
       width: 60vw;
 
-      @include media-up(lg){
+      @include media-up(md) {
         max-width: 20rem;
-
-    }
+      }
     }
   }
 
-  &__btn{
-      margin: 3rem auto;
-      width: fit-content;
-      color: white;
-      background-color: $primary-color;
-      font-size: 2rem;
-      font-weight: 500;
-      border-radius: 3rem;
-      padding: 1rem;
-      box-shadow: 0rem 0rem 1rem $shadow-dark;
-
+  &__btn {
+    margin: 3rem auto;
+    width: fit-content;
+    color: white;
+    background-color: $primary-color;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 3rem;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 1rem $shadow-dark;
   }
 }

@@ -23,12 +23,10 @@ export default function EvoChainContainer(props) {
   const getEvolutionChain = async (url) => {
     try {
       const arrChain = [];
-
       const res = await fetch(url);
       const data = await res.json();
       const chain = data.chain;
       getNextEvolution(arrChain, chain);
-
       return arrChain;
     } catch (error) {
       console.log(error);

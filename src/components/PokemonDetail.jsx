@@ -23,7 +23,11 @@ export default function PokemonDetail({ props }) {
   ];
 
   return (
-    <div className={`poke__detail__container --${pokemon?.types? pokemon.types[0].type.name : ""}`}>
+    <div
+      className={`poke__detail__container --${
+        pokemon?.types ? pokemon.types[0].type.name : ""
+      }`}
+    >
       <div className='poke__detail__id'>
         <span>#{pokemon.id}</span>
       </div>
@@ -43,16 +47,12 @@ export default function PokemonDetail({ props }) {
       </div>
       <div className='poke__detail__specs'>
         <div>
-        <p>PESO</p>
-        <span>
-          {pokemon.weight}
-        </span>
+          <p>PESO</p>
+          <span>{pokemon.weight}</span>
         </div>
         <div>
-        <p>ALTURA</p>
-        <span>
-          {pokemon.height}
-        </span>
+          <p>ALTURA</p>
+          <span>{pokemon.height}</span>
         </div>
       </div>
       <TabsPokeDetail props={{ tabs }} />
