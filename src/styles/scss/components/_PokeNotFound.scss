@@ -12,6 +12,11 @@
     img {
       margin: auto;
       width: 60vw;
+
+      @include media-up(lg){
+        max-width: 20rem;
+
+    }
     }
   }
 

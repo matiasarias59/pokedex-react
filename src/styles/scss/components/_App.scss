@@ -4,9 +4,12 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+
+   
 }
 
 #root{
-   // min-height: 100vh;
-
-}
+  @include media-up(lg){
+    height: 100vh;
+  }
+} 

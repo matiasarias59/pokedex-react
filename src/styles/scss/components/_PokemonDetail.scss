@@ -9,7 +9,12 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    // padding: 2rem 1rem;
+
+
+    @include media-up(lg){
+      width: 30vw;
+
+  }
   }
 
   &__id {

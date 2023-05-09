@@ -10,6 +10,16 @@
       background-color: $bg-light;
       border-radius: 0 2rem 2rem 0;
       overflow: hidden;
+
+      @include media-up(lg){
+        width: 30vw;
+        border-radius: 2rem;
+        margin: auto;
+
+
+    }
+
+
       h2 {
         color: white;
         font-size: 3rem;
@@ -33,5 +43,12 @@
     position: fixed;
     bottom:0;
     z-index: -1;
+
+    @include media-up(lg){
+      //position: initial;
+      width: 45rem;
+      left: calc(50vw - 45rem/2);
+      margin: 4rem auto 0 auto;
+    }
   }
 }

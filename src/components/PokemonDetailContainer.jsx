@@ -3,6 +3,7 @@ import React, { useState, useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import PokemonDetail from './PokemonDetail.jsx';
 import {AppContext} from '../context/AppContext.js';
+import PokeNotFound from './PokeNotFound.jsx';
 export default function PokemonDetailContainer() {
 
   const {selectedPoke} = useContext(AppContext);
@@ -32,7 +33,7 @@ export default function PokemonDetailContainer() {
   return (
     <>
     {!notFound?
-    <PokemonDetail props={{pokemon}}/>:<h2>no disponible</h2>
+    <PokemonDetail props={{pokemon}}/>:<PokeNotFound/>
   }
     
     </>

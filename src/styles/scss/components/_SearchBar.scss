@@ -25,6 +25,11 @@
                 color: $primary-color;
             }
 
+            @include media-up(lg){
+                width: 35vw;
+        
+            }
+
         }
         button{
             font-size: 2rem;

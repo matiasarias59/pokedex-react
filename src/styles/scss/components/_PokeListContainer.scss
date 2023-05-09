@@ -1,5 +1,10 @@
 .pokeList{
     &__container{
         margin: auto;
+
+        @include media-up(lg){
+            width: 70vw;
+    
+        }
     }
 }
